@@ -14,9 +14,13 @@ app.get('/usuarios/:id', (requisicao, resposta) => {
     resposta.sendFile(`${caminhoBase}/usuarios.html`)
 })
 
-// https://localhost:3000
+  // https://localhost:3000
 app.get ('/', (requisicao, resposta) => {
     resposta.sendFile(`${caminhoBase}/index.html`)
+})
+
+app.get ('/', (requisicao, resposta) => {
+    //resposta.sendFile(`${caminhoBase}/index.html`)
 })
 
 app.listen(3000, () => {
